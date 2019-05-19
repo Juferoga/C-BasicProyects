@@ -1,4 +1,4 @@
-# CBasicProyects
+# C++ Programación Basica Proyectos, Actividades y Notas de Clase
 
 Proyectos Basicos Desarrollados para C++ y C.
 Notas De Calase y Ejercicios
