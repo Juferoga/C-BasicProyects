@@ -1,12 +1,24 @@
-#include <bits/stdc++.h>
+#include <bits/stdc++.h>//Utilizamos la biblioteca estandar de c++
 
 using namespace std;
 
+//Definicion de la funcion que calcurará el perimetro del triangulo
 double perimetro(double lado1,double lado2,double lado3);
+
+//Definición de la función que calculará el área del triangulo
 double area(double semiperimetro,double distanciaAB,double ditanciaBC,double distanciaCA );
+
+//Definición de la función que calculará el semiperimetro del triangulo
 double Semiperimetro(double distanciaAB,double distanciaBC, double distanciaCA);
+
+//Definición de la función que realizará el movimiento de los puntos en el eje
 void moverpunto(int x,int y);
+
+//Definición de la función que calculará la distancia entre puntos
 double distancia_entre_puntos(int PuntoA[2],int PuntoB[2]);
+
+// DEFINICION de variables globales que se utilizarán como puntos que marcan los vertices
+// del triangulo
 
 int punto1[2] ;	// Primer punto 
 //   Asignacion de valor en x,y 
@@ -20,18 +32,12 @@ int main(){
 punto1[0]=380/2;
 punto1[1]=20;
 //
-//
 punto2[0]=(380/2)/2;
 punto2[1]=70;
-//
 //
 punto3[0]=((380/2)/2)+(380/2);
 punto3[1]=70;
 //
-
-
-
-
 
 }
 
