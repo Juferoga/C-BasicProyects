@@ -201,7 +201,7 @@ void drawtablero(){
   // y espera que se oprima una tecla
   getch();
 
-
+  		
   
 }
 
