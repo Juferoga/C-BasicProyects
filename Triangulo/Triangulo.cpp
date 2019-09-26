@@ -2,6 +2,10 @@
 
 using namespace std;
 
+// DEFINICION DE FUNCION QUE DIBUJARÁ EL TABLERO 
+void drawtablero();
+void drawtriangle();// Funcion para el dibujo del triangulo 
+
 //Definicion de la funcion que calcurará el perimetro del triangulo
 double perimetro(double lado1,double lado2,double lado3);
 
@@ -27,7 +31,7 @@ int punto3[2] ;	// Tercer punto
 
 
 int main(){
-
+drawtablero();
 //   Asignacion de valor en x,y 
 punto1[0]=380/2;
 punto1[1]=20;
@@ -39,6 +43,109 @@ punto3[0]=((380/2)/2)+(380/2);
 punto3[1]=70;
 //
 
+for (true){
+	double p = perimetro();
+	double sp = semiperimetro();
+	double a = area();
+/*
+ * 	MOVER PUNTO DE UN TRIANGULO
+ * 	int Mov_x;//posiciones movida en x
+ * 	int Mov_y;//posiciones movida en y 
+	switch(){
+
+		case F1:
+			for (this =! ESCape key){
+				case flechaArriba:
+				                // Mover el punto hacia arriba
+							drawtriangle();
+							punto1[1]=punto1[1]+1;
+						  break;
+				case flechaAbajo:
+						// Mover el punto hacia abajo
+							drawtriangle();
+							punto1[1]=punto1[1]-1;
+						break;
+				case flechaDerecha: 
+						// Mover el punto hacia la derecha
+							drawtriangle();
+							punto1[0]=punto1[0]+1;
+						break;
+				case flechaIzquierda;
+						// Mover el punto hacia la izquierda
+							drawtriangle();
+							punto1[0]=punto1[0]-1;
+						break;
+				case ESC:
+						imprimir("TRIANGULO MODIFICADO"); __
+					break;
+			}
+			}
+			break;
+
+                case F2:
+                        for (this =! ESCape key){
+                                case flechaArriba:
+                                                // Mover el punto hacia arriba
+                                                        drawtriangle();
+                                                        punto2[1]=punto2[1]+1;
+                                                  break;
+                                case flechaAbajo:
+                                                // Mover el punto hacia abajo
+                                                        drawtriangle();
+                                                        punto2[1]=punto2[1]-1;
+                                                break;
+                                case flechaDerecha: 
+                                                // Mover el punto hacia la derecha
+                                                        drawtriangle();
+                                                        punto2[0]=punto2[0]+1;
+                                                break;
+                                case flechaIzquierda;
+                                                // Mover el punto hacia la izquierda
+                                                        drawtriangle();
+                                                        punto2[0]=punto2[0]-1;
+                                                break;
+                                case ESC:
+                                                imprimir("TRIANGULO MODIFICADO"); __
+                                        break;
+                        }
+                        }
+                        break;
+
+		case F3:
+                        for (this =! ESCape key){
+                                case flechaArriba:
+                                                // Mover el punto hacia arriba
+                                                        drawtriangle();
+                                                        punto3[1]=punto3[1]+1;
+                                                  break;
+                                case flechaAbajo:
+                                                // Mover el punto hacia abajo
+                                                        drawtriangle();
+                                                        punto3[1]=punto3[1]-1;
+                                                break;
+                                case flechaDerecha: 
+                                                // Mover el punto hacia la derecha
+                                                        drawtriangle();
+                                                        punto3[0]=punto3[0]+1;
+                                                break;
+                                case flechaIzquierda;
+                                                // Mover el punto hacia la izquierda
+                                                        drawtriangle();
+                                                        punto3[0]=punto3[0]-1;
+                                                break;
+                                case ESC:
+                                                imprimir("TRIANGULO MODIFICADO"); __
+                                        break;
+                        }
+                        }
+                        break;
+	}
+*/
+
+drawtablero();
+drawtriangle();
+
+}
 }
 
 double perimetro(double lado1,double lado2,double lado3){
@@ -81,3 +188,23 @@ void moverpunto(int x , int y, int numerodelpunto){
 
 	}
 } 
+
+void drawtablero(){
+  // Cambiamos el color de la letra a azul
+  setTextColor(BLUE);
+  // Iniciamos la ventana con 600px de ancho(x) y 400px de altura(y)
+  initwindow(600,400);
+  // Imprimios en pantalla el texto inicial (SPLASH SCREEN)
+  outtextxy(250,200,"Pantalla de Inicio XD");
+  outtextxy(30,300,"pulse una tecla para continuar ...");
+  // Funcion para obtener un carcter. / sin argumentos permite una pausa 
+  // y espera que se oprima una tecla
+  getch();
+
+
+  
+}
+
+void drawtriangle(){
+
+}
